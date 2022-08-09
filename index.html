@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="images/logo.ico" rel="shortcut icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/glightbox.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/naranja.min.css">
+    <link rel="stylesheet" href="css/waifu.css">
+    <link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css"
   </head>
   <body>
 
@@ -29,6 +31,7 @@
 		    </button>
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+		        <li class="nav-item"  onclick="narn('log')"><a class="nav-link">公告</a></li>
 		        <li class="nav-item"><a class="nav-link" href="#home">主页</a></li>
 		        <li class="nav-item"><a class="nav-link" href="#about">个人简介</a></li>
 		        <li class="nav-item"><a class="nav-link" href="#blog">博客</a></li> 
@@ -44,7 +47,7 @@
         <div class="row no-gutters slider-text align-items-center">
         	<div class="col-lg-7">
             <div class="text mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-              <span class="subheading">欢迎</span>
+              <span class="subheading">欢迎来到</span>
           		<h1 class="mb-4">小白最可爱的小窝 <br>
                 <span class="typewrite" data-period="2000" data-type='[ "前进", "前进", "为了党和人民。" ]'>
                   <span class="wrap"></span>
@@ -52,13 +55,19 @@
               </h1>
               <div class="w-md-75 w-100">
                 <p class="mb-4">天山鸟飞绝，故人两相忘。</p>
-            		<p><a href="#weeklydiary" class="btn btn-primary p-4 py-3">周记 <span class="ion-ios-arrow-round-forward"></span></a> <a href="#blog" class="btn btn-white p-4 py-3 ms-lg-2">博客<span class="ion-ios-arrow-round-forward"></span></a></p>
-                <p class="social-media mt-5"><a href="https://space.bilibili.com/292575107"><span class="ion-ios-add"></span> BiliBili</a> <a href="https://github.com/smallTerminator"><span class="ion-ios-add"></span> Github</a> <a href="https://steve7811d.github.io/"><span class="ion-ios-add"></span> 友情链接</a></p>
+            		<p><a href="#weeklydiary" class="btn btn-primary p-4 py-3">周记 ▷</span></a> <a href="#blog" class="btn btn-white p-4 py-3 ms-lg-2">博客 ▷</span></a></p>
+                <p class="social-media mt-5"><a href="https://space.bilibili.com/292575107">+</span> BiliBili</a> <a href="https://github.com/smallTerminator">+</span> Github</a> <a href="https://steve7811d.github.io/">+</span> 友情链接</a></p>
 		<audio controls="controls"><source src="audio/紫罗兰.mp3" type="audio/mp3" />
             </div>
             </div>
         	</div>
+
         </div>
+               <div class="scrollDown">
+                <a href="#about">
+                 <span id="scrollDownIcon"></span>
+                </a>
+              </div>
       </div>
     </section>
     <section class="ftco-section" id="about">
@@ -101,8 +110,8 @@
             <div class="blog-entry justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <a href="blog-single.html" class="block-20 img" style="background-image: url('images/m3.jpg');">
               </a>
-              <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10.6, 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>无评论</a></span></p>
+              <div class="text"> 
+                <p class="meta"><span>📅 </i>2021年10月6日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="blog-single.html">伟大的毛主席永垂不朽</a></h3>
                 <p></p>
               </div>
@@ -113,7 +122,7 @@
               <a href="blog-single1.html" class="block-20 img" style="background-image: url('images/hezhao.png');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10. 8, 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>无评论</a></span></p>
+                <p class="meta"><span>📅 </i>2021年10月8日/span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="blog-single.html1">我喜欢看的二次元动漫</a></h3>
                 <p></p>
               </div>
@@ -124,7 +133,7 @@
               <a href="blog-single2.html" class="block-20 img" style="background-image: url('images/liao3.jpg');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10. 20, 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>0 Comments</a></span></p>
+                <p class="meta"><span>📅 /i>2021年10月20日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="#">辽宁舰的凤凰涅槃</a></h3>
                 <p>而今尚未成气势，剑指东海寇已慌</p>
               </div>
@@ -135,7 +144,7 @@
               <a href="blog-single4.html" class="block-20 img" style="background-image: url('images/zhong1.jpg');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10. 20, 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                <p class="meta"><span>📅 </i>2021年10月20日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="#">全频段阻塞干扰 华北战场</a></h3>
                 <p>一寸山河一寸血，十万青年十万军</p>
               </div>
@@ -156,7 +165,7 @@
               <a href="blog-zhanlei.html" class="block-20 img" style="background-image: url('images/战翼.jpg');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10. 10, 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>1评论</a></span></p>
+                <p class="meta"><span>📅 </i>2021年10月10日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="blog-zhanlei.html">战争雷霆的回忆</a></h3>
                 <p></p>
               </div>
@@ -167,7 +176,7 @@
               <a href="blog-mingyunshi.html" class="block-20 img" style="background-image: url('images/mingyunshi2.jpg');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10. 13 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>无评论</a></span></p>
+                <p class="meta"><span>📅 </i>2021年10月31日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="blog-single.html1">为什么我喜欢命运石之门</a></h3>
                 <p></p>
               </div>
@@ -178,7 +187,7 @@
               <a href="blog-honglong.html" class="block-20 img" style="background-image: url('images/hongl1.png');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>11.22 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>无评论</a></span></p>
+                <p class="meta"><span>📅 </i>2021年11月22日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="blog-single.html1">架空历史   红龙</a></h3>
                 <p></p>
              </div>
@@ -189,18 +198,65 @@
               <a href="blog-mingyunshi1.html" class="block-20 img" style="background-image: url('images/zg7.jpg');">
               </a>
               <div class="text">
-                <p class="meta"><span><i class="fa fa-calendar me-1"></i>10. 13 2021</span> <span><a href="#"><i class="fa fa-comment me-1"></i>无评论</a></span></p>
+                <p class="meta"><span>📅 </i>2021年10月31日</span> <span><a href="#">💬 </i>暂无评论</a></span></p>
                 <h3 class="heading mb-3"><a href="blog-mingyunshi1.html">如何成为蓝星强国</a></h3>
                 <p></p>
               </div>
             </div>
           </div>
-        </div>  
-    </section> 
+          <div class="col-md-7 heading-section text-center" data-aos="fade-up" data-aos-duration="1000">
+         <h2>留言板</h2>
+          </div>
+<div id="lv-container" data-id="city" data-uid="MTAyMC81NjU5NC8zMzA1Nw==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-    <footer class="ftco-footer">
-          <div class="text" style=" text-align:center;">我家小白最可爱2021</div> 
-    </footer>
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div> 
+            <div class="col-md-7 heading-section text-cente" data-aos="fade-up" data-aos-duration="1100"><div class="text" style=" text-align:center;"><a href="#home" class="btn btn-primary p-4 py-3">返回顶部</a></div></div>
+
+    </section>  
+
+	<script type="text/javascript">
+		function narn (type) {
+		    naranja()[type]({
+		      title: '公告',
+		      text: '因为小白寄了，所以更新慢的一批',
+		      timeout: 'keep',
+		      buttons: [{
+		        text: '确定',
+		        click: function (e) {
+		          naranja().success({
+		            title: '收到',
+		            text: '前进，前进，为了党和人民！'
+		          })
+		        }
+		      },{
+		        text: '关闭',
+		        click: function (e) {
+		          e.closeNotification()
+		        }
+		      }]
+		    })
+		  }
+	</script>
+
+
+      <div class="container">
+        <div class="row g-lg-5">
+          <div class="col-lg-12 blog-single">
+            <div class="text" style=" text-align:center;"><iframe width="430" scrolling="no" height="25" frameborder="0" allowtransparency="true" src="https://i.tianqi.com?c=code&id=1&icon=1&site=12"></iframe></div>
+          <div class="text" style=" text-align:center;">我家小白最可愛い❤️2022</div> 
 		    
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/tiny-slider.js"></script>
@@ -210,7 +266,10 @@
   <script src="js/slideNav.js"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="js/naranja.js"></script>
+  <script src="js/jquery.min.js"></script>
+   <script src="js/waifu-tips.js"></script>
+   <script src="js/autoload.js"></script>
     
   </body>
 </html>
